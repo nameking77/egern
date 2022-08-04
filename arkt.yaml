@@ -1,0 +1,10 @@
+scriptings:
+    - http_response:
+      name: 傲软抠图
+      script_url: https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/arkt.js
+      match: ^https?:(.+).aoscdn.com/app/aimage/usersInfo$
+      body_required: true
+  
+mitm:
+  hostnames:
+    - '*.aoscdn.com'
